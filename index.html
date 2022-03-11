@@ -55,12 +55,17 @@
                     <!-- modal button -->
                     <button class="btn btn-secondary btn-lg my-4">About Me</button>
                 </div>
-                <img class="image-fluid w-50 d-none d-sm-block rounded-circle" src="img/gray phoenix logo.jpg" alt="" srcset="">
+                <!-- image not shown on mobile -->
+                <img class="image-fluid img-thumbnail w-50 d-none d-sm-block rounded-circle" src="img/gray phoenix logo.jpg" alt="" srcset="">
             </div>
         </div>
     </section>
-    <section class="p-5 bg-secondary text-warning">
-        <div id="languages" class="h1 text-center">
+
+    <!-- languages and technologies section-->
+    <!-- uses font awesome icons on cards using grid system -->
+    <!-- cards not shown on mobile -->
+    <section class="p-5 bg-secondary">
+        <div id="languages" class="h1 text-center text-warning">
             Languages and Technologies Used:
         </div>
         <div class="container d-none d-md-block">
@@ -103,6 +108,7 @@
                 </div>
             </div>
         </div>
+        <!-- list of technologies not on cards - shows on all devices -->
         <div class="container">
             <div class="row row-cols-7 justify-content-center">
                 <ul class="list-group list-group-horizontal text-center align-items-center text-nowrap row">
@@ -117,6 +123,17 @@
             </div>
         </div>
     </section>
+
+    <!-- footer section -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Josh Kladis</p>
+            <!-- back to top button -->
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="fa-solid fa-circle-arrow-up h1"></i>
+            </a>
+        </div>
+    </footer>
     <!-- Local JS -->
     <script src="script.js"></script>
     <!-- Bootstrap JS and Popper -->
