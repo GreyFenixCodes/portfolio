@@ -53,10 +53,10 @@
                     <h1>Josh Kladis <span class="text-warning">aka</span> Grey Fenix</h1>
                     <p class="lead my-2">Full stack programmer focusing on front-end development</p>
                     <!-- modal button -->
-                    <button class="btn btn-secondary btn-lg my-4">About Me</button>
+                    <button class="btn btn-secondary btn-lg my-4" data-bs-toggle="modal" data-bs-target="#about">About This Site</button>
                 </div>
                 <!-- image not shown on mobile -->
-                <img class="image-fluid img-thumbnail w-50 d-none d-sm-block rounded-circle" src="img/gray phoenix logo.jpg" alt="" srcset="">
+                <img id='grey' class="image-fluid img-thumbnail d-none d-md-block rounded-circle" src="img/Grey.jpg" alt="" srcset="">
             </div>
         </div>
     </section>
@@ -70,7 +70,7 @@
         </div>
         <div class="container d-none d-md-block">
             <div class="row text-center">
-                <div class="col-md py-2">
+                <div class="col col-md my-2">
                     <div class="card bg-primary text-light">
                         <div class="card-body text-center shadow-lg">
                             <div class="h1">
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md py-2">
+                <div class="col col-md my-2">
                     <div class="card bg-primary text-light shadow-lg">
                         <div class="card-body text-center">
                             <div class="h1">
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md py-2">
+                <div class="col col-md my-2">
                     <div class="card bg-primary text-light shadow-lg">
                         <div class="card-body text-center">
                             <div class="h1">
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md py-2">
+                <div class="col col-md my-2">
                     <div class="card bg-primary text-light shadow-lg">
                         <div class="card-body text-center">
                             <div class="h1">
@@ -134,6 +134,28 @@
             </a>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="about" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="aboutLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="aboutLabel">Welcome to my site!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-light">
+                <p class="lead py-2">This site is not meant to be fancy.</p>
+                <p class="lead">It is to display certain concepts, like a modal button or utilizing flex and grid with bootstrap, and also to display some sample projects.</p>
+                <p>Take a look around!</p>                
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
     <!-- Local JS -->
     <script src="script.js"></script>
     <!-- Bootstrap JS and Popper -->
