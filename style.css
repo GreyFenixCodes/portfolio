@@ -2,3 +2,7 @@
     max-height: 50vh;
     width: auto;
 }
+
+#languages, #about_me, #projects, #contact {
+    scroll-margin-top: 4em;
+}
